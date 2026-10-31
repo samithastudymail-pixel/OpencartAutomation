@@ -1,0 +1,304 @@
+<testsuites id="" name="" tests="33" failures="3" skipped="0" errors="2" time="46.714099">
+<testsuite name="api/auth.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.436" errors="1">
+<testcase name="Authentication API Tests › Successful Login @master @sanity @api" classname="api/auth.spec.ts" time="3.369">
+</testcase>
+<testcase name="Authentication API Tests › Invalid Login @master @sanity @api" classname="api/auth.spec.ts" time="2.067">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/api-auth-Authentication-AP-f4245-lid-Login-master-sanity-api-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="Unexpected token &apos;u&apos;, &quot;username o&quot;... is not valid JSON" type="SyntaxError">
+<![CDATA[  [chromium] › api/auth.spec.ts:27:9 › Authentication API Tests › Invalid Login @master @sanity @api 
+
+    SyntaxError: Unexpected token 'u', "username o"... is not valid JSON
+
+      35 |         expect(response.status()).toBe(401);
+      36 |
+    > 37 |         const responseBody = await response.json();
+         |                              ^
+      38 |         expect(responseBody.message).toBe('username or password is incorrect');
+      39 |     });
+      40 | });
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/api/auth.spec.ts:37:30
+
+    Error Context: ../test-results/api-auth-Authentication-AP-f4245-lid-Login-master-sanity-api-chromium/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="api/carts.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="7" failures="0" skipped="0" time="9.205" errors="0">
+<testcase name="Carts API Tests › Get All Carts @master @sanity @api" classname="api/carts.spec.ts" time="2.165">
+</testcase>
+<testcase name="Carts API Tests › Get Cart by ID @master @sanity @api" classname="api/carts.spec.ts" time="1.997">
+</testcase>
+<testcase name="Carts API Tests › Get Carts by Date Range @master @sanity @api" classname="api/carts.spec.ts" time="1.741">
+</testcase>
+<testcase name="Carts API Tests › Get User Cart @master @sanity @api" classname="api/carts.spec.ts" time="0.674">
+</testcase>
+<testcase name="Carts API Tests › Get Carts with Limit @master @sanity @api" classname="api/carts.spec.ts" time="0.835">
+</testcase>
+<testcase name="Carts API Tests › Sort Carts Ascending @master @sanity @api" classname="api/carts.spec.ts" time="0.96">
+</testcase>
+<testcase name="Carts API Tests › Sort Carts Descending @master @sanity @api" classname="api/carts.spec.ts" time="0.833">
+</testcase>
+</testsuite>
+<testsuite name="api/products.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="7" failures="0" skipped="0" time="6.029" errors="0">
+<testcase name="Products API Tests › Get All Products @master @sanity @api" classname="api/products.spec.ts" time="1.042">
+</testcase>
+<testcase name="Products API Tests › Get Product by ID @master @sanity @api" classname="api/products.spec.ts" time="0.85">
+</testcase>
+<testcase name="Products API Tests › Get Products with Limit @master @sanity @api" classname="api/products.spec.ts" time="0.939">
+</testcase>
+<testcase name="Products API Tests › Sort Products – Ascending @master @sanity @api" classname="api/products.spec.ts" time="0.892">
+</testcase>
+<testcase name="Products API Tests › Sort Products – Descending @master @sanity @api" classname="api/products.spec.ts" time="0.835">
+</testcase>
+<testcase name="Products API Tests › Get All Product Categories @master @sanity @api" classname="api/products.spec.ts" time="0.785">
+</testcase>
+<testcase name="Products API Tests › Get Products by Category @master @sanity @api" classname="api/products.spec.ts" time="0.686">
+</testcase>
+</testsuite>
+<testsuite name="api/users.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="5" failures="0" skipped="0" time="3.728" errors="0">
+<testcase name="Users API Tests › Get All Users @master @sanity @api" classname="api/users.spec.ts" time="0.61">
+</testcase>
+<testcase name="Users API Tests › Get User by ID @master @sanity @api" classname="api/users.spec.ts" time="0.754">
+</testcase>
+<testcase name="Users API Tests › Get Users with Limit @master @sanity @api" classname="api/users.spec.ts" time="0.787">
+</testcase>
+<testcase name="Users API Tests › Sort Users Ascending @master @sanity @api" classname="api/users.spec.ts" time="0.822">
+</testcase>
+<testcase name="Users API Tests › Sort Users Descending @master @sanity @api" classname="api/users.spec.ts" time="0.755">
+</testcase>
+</testsuite>
+<testsuite name="web/add-product-to-cart.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="1" failures="0" skipped="0" time="20.447" errors="0">
+<testcase name="Add Product to Cart @master @sanity @regression @web" classname="web/add-product-to-cart.spec.ts" time="20.447">
+<system-out>
+<![CDATA[✅ Add Product to Cart completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web/e2e-shopping-flow.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="1" failures="0" skipped="0" time="20.605" errors="1">
+<testcase name="End-to-End Shopping Flow @master @sanity @regression @end-to-end @web" classname="web/e2e-shopping-flow.spec.ts" time="20.605">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/web-e2e-shopping-flow-End--9c515-y-regression-end-to-end-web-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/web-e2e-shopping-flow-End--9c515-y-regression-end-to-end-web-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/web-e2e-shopping-flow-End--9c515-y-regression-end-to-end-web-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.click: Error: strict mode violation: getByRole(&apos;link&apos;, { name: &apos;Logout&apos; }) resolved to 2 elements:" type="Error">
+<![CDATA[  [chromium] › web/e2e-shopping-flow.spec.ts:18:5 › End-to-End Shopping Flow @master @sanity @regression @end-to-end @web › 2) Logout 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'Logout' }) resolved to 2 elements:
+        1) <a href="https://awesomeqa.com/ui/index.php?route=account/logout">Logout</a> aka locator('#top-links').getByRole('link', { name: 'Logout' })
+        2) <a class="list-group-item" href="https://awesomeqa.com/ui/index.php?route=account/logout">Logout</a> aka locator('#column-right').getByRole('link', { name: 'Logout' })
+
+    Call log:
+      - waiting for getByRole('link', { name: 'Logout' })
+
+
+       at ../pages/MyAccountPage.ts:38
+
+      36 |      */
+      37 |     async clickLogout(): Promise<void> {
+    > 38 |         await this.lnkLogout.click();
+         |                              ^
+      39 |     }
+      40 | }
+      41 |
+        at MyAccountPage.clickLogout (/Users/samithasulakkana/Documents/playwrite/OpencartAutomation/pages/MyAccountPage.ts:38:30)
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/e2e-shopping-flow.spec.ts:48:29
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/e2e-shopping-flow.spec.ts:45:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/web-e2e-shopping-flow-End--9c515-y-regression-end-to-end-web-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/web-e2e-shopping-flow-End--9c515-y-regression-end-to-end-web-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/web-e2e-shopping-flow-End--9c515-y-regression-end-to-end-web-chromium/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="web/invalid-login.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="1" failures="1" skipped="0" time="16.262" errors="0">
+<testcase name="Invalid Login Flow @master @sanity @regression @web" classname="web/invalid-login.spec.ts" time="16.262">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/web-invalid-login-Invalid--f9207-aster-sanity-regression-web-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/web-invalid-login-Invalid--f9207-aster-sanity-regression-web-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/web-invalid-login-Invalid--f9207-aster-sanity-regression-web-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [chromium] › web/invalid-login.spec.ts:15:5 › Invalid Login Flow @master @sanity @regression @web › 3) Verify login failure with warning message 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Warning: No match for E-Mail Address and/or Password."
+    Received string:    "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+
+      24 |     await test.step('3) Verify login failure with warning message', async () => {
+      25 |         const warningMsg = await loginPage.getWarningMessage();
+    > 26 |         expect(warningMsg).toContain('Warning: No match for E-Mail Address and/or Password.');
+         |                            ^
+      27 |     });
+      28 |
+      29 |     console.log('✅ Invalid Login Flow completed successfully!');
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/invalid-login.spec.ts:26:28
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/invalid-login.spec.ts:24:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/web-invalid-login-Invalid--f9207-aster-sanity-regression-web-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/web-invalid-login-Invalid--f9207-aster-sanity-regression-web-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/web-invalid-login-Invalid--f9207-aster-sanity-regression-web-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="web/login-data-driven.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="5" failures="2" skipped="0" time="66.858" errors="0">
+<testcase name="Login Data Driven - Valid login success - Row 1 @master @sanity @regression @datadriven @web" classname="web/login-data-driven.spec.ts" time="19.995">
+<system-out>
+<![CDATA[✅ Login Data Driven test for Valid login completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Data Driven - Invalid login failure - Row 2 @master @sanity @regression @datadriven @web" classname="web/login-data-driven.spec.ts" time="12.859">
+<system-out>
+<![CDATA[✅ Login Data Driven test for Invalid login completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Data Driven - Invalid login failure - Row 3 @master @sanity @regression @datadriven @web" classname="web/login-data-driven.spec.ts" time="8.332">
+<system-out>
+<![CDATA[✅ Login Data Driven test for Invalid login completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Data Driven - Invalid login failure - Row 4 @master @sanity @regression @datadriven @web" classname="web/login-data-driven.spec.ts" time="10.311">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/web-login-data-driven-Logi-30372-y-regression-datadriven-web-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/web-login-data-driven-Logi-30372-y-regression-datadriven-web-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/web-login-data-driven-Logi-30372-y-regression-datadriven-web-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [chromium] › web/login-data-driven.spec.ts:18:9 › Login Data Driven - Invalid login failure - Row 4 @master @sanity @regression @datadriven @web › Validate result based on expected 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Warning: No match for E-Mail Address and/or Password."
+    Received string:    "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+
+      33 |             } else if (data.expected === 'failure') {
+      34 |                 const warningMsg = await loginPage.getWarningMessage();
+    > 35 |                 expect(warningMsg).toContain('Warning: No match for E-Mail Address and/or Password.');
+         |                                    ^
+      36 |             }
+      37 |         });
+      38 |
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/login-data-driven.spec.ts:35:36
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/login-data-driven.spec.ts:29:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/web-login-data-driven-Logi-30372-y-regression-datadriven-web-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/web-login-data-driven-Logi-30372-y-regression-datadriven-web-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/web-login-data-driven-Logi-30372-y-regression-datadriven-web-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Login Data Driven - Invalid login failure - Row 5 @master @sanity @regression @datadriven @web" classname="web/login-data-driven.spec.ts" time="15.361">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/web-login-data-driven-Logi-b984b-y-regression-datadriven-web-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/web-login-data-driven-Logi-b984b-y-regression-datadriven-web-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/web-login-data-driven-Logi-b984b-y-regression-datadriven-web-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [chromium] › web/login-data-driven.spec.ts:18:9 › Login Data Driven - Invalid login failure - Row 5 @master @sanity @regression @datadriven @web › Validate result based on expected 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Warning: No match for E-Mail Address and/or Password."
+    Received string:    "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+
+      33 |             } else if (data.expected === 'failure') {
+      34 |                 const warningMsg = await loginPage.getWarningMessage();
+    > 35 |                 expect(warningMsg).toContain('Warning: No match for E-Mail Address and/or Password.');
+         |                                    ^
+      36 |             }
+      37 |         });
+      38 |
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/login-data-driven.spec.ts:35:36
+        at /Users/samithasulakkana/Documents/playwrite/OpencartAutomation/tests/web/login-data-driven.spec.ts:29:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/web-login-data-driven-Logi-b984b-y-regression-datadriven-web-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/web-login-data-driven-Logi-b984b-y-regression-datadriven-web-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/web-login-data-driven-Logi-b984b-y-regression-datadriven-web-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="web/logout-flow.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.444" errors="0">
+<testcase name="Logout Flow @master @sanity @regression @web" classname="web/logout-flow.spec.ts" time="14.444">
+<system-out>
+<![CDATA[✅ Logout Flow completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web/product-search.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.078" errors="0">
+<testcase name="Product Search Flow @master @sanity @regression @web" classname="web/product-search.spec.ts" time="14.078">
+<system-out>
+<![CDATA[✅ Product Search Flow completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web/user-registration.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="1" failures="0" skipped="0" time="16.405" errors="0">
+<testcase name="User Registration Flow @master @sanity @regression @web" classname="web/user-registration.spec.ts" time="16.405">
+<system-out>
+<![CDATA[✅ User Registration Flow completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="web/valid-login.spec.ts" timestamp="2026-10-31T12:41:49.498Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.223" errors="0">
+<testcase name="Valid Login Flow @master @sanity @regression @web" classname="web/valid-login.spec.ts" time="10.223">
+<system-out>
+<![CDATA[✅ Valid Login Flow completed successfully!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
